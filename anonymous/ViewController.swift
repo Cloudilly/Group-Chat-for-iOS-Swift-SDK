@@ -21,7 +21,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         self.init(nibName:nil, bundle:nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillChangeFrame:", name: UIKeyboardWillChangeFrameNotification, object: nil)
         self.msgs = []
-        self.cloudilly = Cloudilly(app: "<INSERT YOUR APP NAME>", andAccess: "<INSERT YOUR ACCESS KEY>", withCallback: {
+        let app = "<INSERT YOUR APP NAME>"
+        let access = "<INSERT YOUR ACCESS KEY>"
+        self.cloudilly = Cloudilly(app: app, andAccess: access, withCallback: {
             self.addMsg("CONNECTING...")
             self.cloudilly.connect()
         })
@@ -90,7 +92,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         if(self.field.text!.characters.count == 0) { return }
         let payload: NSMutableDictionary = ["msg": self.field.text!]
         self.cloudilly.postGroup("public", withPayload: payload, withCallback: { dict in
-            if((dict["status"]!.isEqualToString("fail"))) { print(dict["msg"]); return; }
+            if((dict["status"]!.isEqualToString("fail"))) { print((dict["msg"] as! String)); return; }
             print("@@@@@@ POST " + String(dict))
         })
         self.field.text = ""
@@ -100,7 +102,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         if(self.field.text!.characters.count == 0) { return false }
         let payload: NSMutableDictionary = ["msg": self.field.text!]
         self.cloudilly.postGroup("public", withPayload: payload, withCallback: { dict in
-            if((dict["status"]!.isEqualToString("fail"))) { print(dict["msg"]); return; }
+            if((dict["status"]!.isEqualToString("fail"))) { print((dict["msg"] as! String)); return; }
             print("@@@@@@ POST " + String(dict))
         })
         self.field.text = ""
@@ -157,12 +159,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
     }
     
     func socketConnected(dict: [NSObject : AnyObject]!) {
-        if((dict["status"]!.isEqualToString("fail"))) { print(dict["msg"]); return; }
+        if((dict["status"]!.isEqualToString("fail"))) { print((dict["msg"] as! String)); return; }
         print("@@@@@@ CONNECTED " + String(dict))
         
         self.addMsg("CONNECTED AS " + (dict["device"] as! String).uppercaseString)
         self.cloudilly.joinGroup("public", withCallback: { dict in
-            if((dict["status"]!.isEqualToString("fail"))) { print(dict["msg"]); return; }
+            if((dict["status"]!.isEqualToString("fail"))) { print((dict["msg"] as! String)); return; }
             print("@@@@@@ JOIN " + String(dict))
             self.addMsg("DEVICE PRESENT IN PUBLIC " + "\(dict["total_devices"] as! NSNumber)")
         })
