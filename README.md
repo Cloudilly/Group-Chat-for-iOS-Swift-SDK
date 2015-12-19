@@ -11,4 +11,4 @@ If you have not already done so, first create an account on [Cloudilly](https://
 ![iOS Console](https://github.com/cloudilly/images/blob/master/ios_console.png)
 
 #####Update Access
-[Insert your _"App Name"_ and _"Access"_](../../blob/master/anonymous/ViewController.m#L21-L22). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from iOS to Web / Android and vice versa.
+[Insert your _"App Name"_ and _"Access"_](../../blob/master/anonymous/ViewController.swift#L24-L25). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from iOS to Web / Android and vice versa.
