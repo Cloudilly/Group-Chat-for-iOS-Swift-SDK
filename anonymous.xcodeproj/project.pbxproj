@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40033B831C235F8D006D1E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40033B821C235F8D006D1E19 /* AppDelegate.swift */; };
+		40033B851C235F8D006D1E19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40033B841C235F8D006D1E19 /* ViewController.swift */; };
+		40033B8A1C235F8D006D1E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40033B891C235F8D006D1E19 /* Assets.xcassets */; };
+		40FD5E311C2557F500CED956 /* Cloudilly.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FD5E2C1C2557F500CED956 /* Cloudilly.m */; };
+		40FD5E321C2557F500CED956 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FD5E2E1C2557F500CED956 /* GCDAsyncSocket.m */; };
+		40FD5E331C2557F500CED956 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FD5E301C2557F500CED956 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40033B7F1C235F8D006D1E19 /* anonymous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anonymous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40033B821C235F8D006D1E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40033B841C235F8D006D1E19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40033B891C235F8D006D1E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40033B8E1C235F8D006D1E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FD5E2A1C2557F500CED956 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		40FD5E2B1C2557F500CED956 /* Cloudilly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cloudilly.h; path = Cloudilly/Cloudilly.h; sourceTree = "<group>"; };
+		40FD5E2C1C2557F500CED956 /* Cloudilly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cloudilly.m; path = Cloudilly/Cloudilly.m; sourceTree = "<group>"; };
+		40FD5E2D1C2557F500CED956 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Cloudilly/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		40FD5E2E1C2557F500CED956 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Cloudilly/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		40FD5E2F1C2557F500CED956 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Cloudilly/Reachability.h; sourceTree = "<group>"; };
+		40FD5E301C2557F500CED956 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Cloudilly/Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40033B7C1C235F8D006D1E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40033B761C235F8D006D1E19 = {
+			isa = PBXGroup;
+			children = (
+				40033B811C235F8D006D1E19 /* anonymous */,
+				40033B801C235F8D006D1E19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40033B801C235F8D006D1E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40033B7F1C235F8D006D1E19 /* anonymous.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40033B811C235F8D006D1E19 /* anonymous */ = {
+			isa = PBXGroup;
+			children = (
+				40033B821C235F8D006D1E19 /* AppDelegate.swift */,
+				40033B841C235F8D006D1E19 /* ViewController.swift */,
+				40FD5E2A1C2557F500CED956 /* ObjCBridge.h */,
+				40FD5E291C2557DE00CED956 /* Cloudilly */,
+				40033B891C235F8D006D1E19 /* Assets.xcassets */,
+				40033B8E1C235F8D006D1E19 /* Info.plist */,
+			);
+			path = anonymous;
+			sourceTree = "<group>";
+		};
+		40FD5E291C2557DE00CED956 /* Cloudilly */ = {
+			isa = PBXGroup;
+			children = (
+				40FD5E2B1C2557F500CED956 /* Cloudilly.h */,
+				40FD5E2C1C2557F500CED956 /* Cloudilly.m */,
+				40FD5E2D1C2557F500CED956 /* GCDAsyncSocket.h */,
+				40FD5E2E1C2557F500CED956 /* GCDAsyncSocket.m */,
+				40FD5E2F1C2557F500CED956 /* Reachability.h */,
+				40FD5E301C2557F500CED956 /* Reachability.m */,
+			);
+			name = Cloudilly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40033B7E1C235F8D006D1E19 /* anonymous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40033B911C235F8D006D1E19 /* Build configuration list for PBXNativeTarget "anonymous" */;
+			buildPhases = (
+				40033B7B1C235F8D006D1E19 /* Sources */,
+				40033B7C1C235F8D006D1E19 /* Frameworks */,
+				40033B7D1C235F8D006D1E19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = anonymous;
+			productName = anonymous;
+			productReference = 40033B7F1C235F8D006D1E19 /* anonymous.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40033B771C235F8D006D1E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Cloudilly Private Limited";
+				TargetAttributes = {
+					40033B7E1C235F8D006D1E19 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 40033B7A1C235F8D006D1E19 /* Build configuration list for PBXProject "anonymous" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40033B761C235F8D006D1E19;
+			productRefGroup = 40033B801C235F8D006D1E19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40033B7E1C235F8D006D1E19 /* anonymous */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40033B7D1C235F8D006D1E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40033B8A1C235F8D006D1E19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40033B7B1C235F8D006D1E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FD5E321C2557F500CED956 /* GCDAsyncSocket.m in Sources */,
+				40033B851C235F8D006D1E19 /* ViewController.swift in Sources */,
+				40FD5E311C2557F500CED956 /* Cloudilly.m in Sources */,
+				40033B831C235F8D006D1E19 /* AppDelegate.swift in Sources */,
+				40FD5E331C2557F500CED956 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40033B8F1C235F8D006D1E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40033B901C235F8D006D1E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40033B921C235F8D006D1E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = anonymous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudilly.anonymous;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = anonymous/ObjCBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40033B931C235F8D006D1E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = anonymous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudilly.anonymous;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = anonymous/ObjCBridge.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40033B7A1C235F8D006D1E19 /* Build configuration list for PBXProject "anonymous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40033B8F1C235F8D006D1E19 /* Debug */,
+				40033B901C235F8D006D1E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40033B911C235F8D006D1E19 /* Build configuration list for PBXNativeTarget "anonymous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40033B921C235F8D006D1E19 /* Debug */,
+				40033B931C235F8D006D1E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40033B771C235F8D006D1E19 /* Project object */;
+}
