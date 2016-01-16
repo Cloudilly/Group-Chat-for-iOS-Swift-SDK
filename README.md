@@ -1,5 +1,5 @@
 #Anonymous Group Chat for iOS Swift SDK
-Repository contains sample codes required to build an anonymous group chat application using Cloudilly iOS Swift SDK.
+Repository contains sample codes to build an anonymous group chat application using Cloudilly iOS Swift SDK.
 
 ![Anonymous](https://github.com/Cloudilly/Images/blob/master/ios_anonymous.png)
 
